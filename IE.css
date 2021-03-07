@@ -1,0 +1,280 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+body {
+    background-color: hsl(0, 0%, 82%);
+    font-family: Helvetica;
+    color: hsl(0, 0%, 54%);
+    margin: 0 auto;
+}
+
+.grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat (3, 1fr);
+    grid-template-columns: repeat (3, 1fr);
+}
+
+header {
+    background-color: hsl(0, 0%, 100%);
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: 1 / 1 / 1 / span 3;
+    -webkit-box-shadow: 2px 2px 15px hsl(0, 0%, 54%);
+            box-shadow: 2px 2px 15px hsl(0, 0%, 54%);
+    border-radius: 40px;
+    box-shadow: 2px 2px 15px hsl(0, 0%, 54%);
+    border-radius: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+header h1 {
+    color: hsl(0, 0%, 54%);
+    padding-left: 50px;
+    font-size: 32px;
+}
+
+/**/
+nav {
+    background-color: hsl(225, 100%, 50%);
+    -webkit-box-shadow: -2px -2px 15px hsl(0, 0%, 54%);
+            box-shadow: -2px -2px 15px hsl(0, 0%, 54%);
+    -webkit-box-shadow: 2px 2px 15px hsl(0, 0%, 54%);
+            box-shadow: 2px 2px 15px hsl(0, 0%, 54%);
+    border-radius: 80px;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: 1 / 1 / 1 / span 3;
+    margin-bottom: -60px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: right;
+    padding-right: 100px;
+}
+
+nav li {
+    display: inline;
+    
+}
+nav a {
+    text-decoration: none;
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(225, 100%, 50%);
+    border: 2px solid hsl(225, 100%, 50%);
+    border-radius: 20px 20px;
+    padding: 5px 20px;
+    -webkit-transition-duration: 0.4s;
+         -o-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+}
+
+nav a:hover {
+    font-size: 14px;
+    color: white;
+    background-color: hsl(168, 100%, 50%);
+    border: 2px solid hsl(168, 100%, 50%);
+    border-radius: 20px 20px;
+    padding: 5px 20px;
+}
+/**/
+.box {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: 2 / 2 / 2 / 2;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.contents {
+    font-size: 16px;
+    text-align: center;
+    padding: 20px 20px;
+   
+}
+
+.logo {
+    max-width: 25%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button1 {
+    font-size: 14px;
+    color: white;
+    background-color: hsl(168, 100%, 50%);
+    border: 2px solid hsl(168, 100%, 50%);
+    border-radius: 20px 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+         -o-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button1:hover {
+    font-size: 14px;
+    color: white;
+    background-color: hsl(225, 100%, 50%);
+    border: 2px solid hsl(225, 100%, 50%);
+    border-radius: 20px 20px;
+    padding: 10px 30px;
+    
+}
+
+/**/
+footer {
+    font-size: 11px;
+    background-color: transparent;
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: 4 / 1 / 4 / span 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+    
+header {
+    background-color: hsl(0, 0%, 100%);
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: 1 / 1 / 1 / span 3;
+    -webkit-box-shadow: 2px 2px 15px hsl(0, 0%, 54%);
+            box-shadow: 2px 2px 15px hsl(0, 0%, 54%);
+    border-radius: 30px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+header h1 {
+    color: hsl(0, 0%, 54%);
+    padding: 0 50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+/**/
+nav {
+    background-color: hsl(225, 100%, 50%);
+    -webkit-box-shadow: -2px -2px 15px hsl(0, 0%, 54%);
+            box-shadow: -2px -2px 15px hsl(0, 0%, 54%);
+    border-radius: 35px;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: 1 / 1 / 1 / span 3;
+    margin-bottom: 200px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(225, 100%, 50%);
+    border: 2px solid hsl(225, 100%, 50%);
+    border-radius: 20px 20px;
+    padding: 5px 20px;
+    -webkit-transition-duration: 0.4s;
+         -o-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+}
+
+nav a:hover {
+    font-size: 14px;
+    color: hsl(225, 100%, 50%);
+    background-color: hsl(0, 0%, 100%);
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 20px 20px;
+    padding: 5px 20px;
+}
+/**/
+.box {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: 2 / 2 / 2 / 2;
+}
+
+.contents {
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.logo {
+    max-width: 50%;
+    height: auto;
+}
+
+.button1 {
+    font-size: 12px;
+    color: hsl(0, 0%, 100%);
+    text-shadow: 0 2px 5px white;
+    background-color: hsl(168, 100%, 50%);
+    border: 2px solid hsl(168, 100%, 50%);
+    border-radius: 20px 20px;
+    padding: 10px 35px;
+    -webkit-transition-duration: 0.4s;
+         -o-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+    cursor: pointer;
+    
+}
+.button1:hover {
+    font-size: 12px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(225, 100%, 50%);
+    border: 2px solid hsl(225, 100%, 50%);
+    border-radius: 20px 20px;
+    padding: 10px 35px;
+}
+
+/**/
+footer {
+    font-size: 11px;
+    background-color: transparent;
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: 4 / 1 / 4 / span 3;
+    padding: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+}
